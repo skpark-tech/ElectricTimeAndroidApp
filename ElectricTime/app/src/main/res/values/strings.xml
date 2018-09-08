@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ElectricTime</string>
+    <string name="miles">Miles</string>
+    <string name="title_activity_simple_spinner_item">simple_spinner_item</string>
+    <string name="title_activity_simple_spinner">simple_spinner</string>
+    <string name="give_me_the_miles">Miles Input/Output!</string>
+    <string name="give_me_the_time">Time Input/Output!</string>
+    <string name="here_s_the_time">Here\'s the time!</string>
+    <string name="choose_device">Choose Device</string>
+</resources>

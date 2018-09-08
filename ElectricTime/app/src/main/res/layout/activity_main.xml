@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/timeIO"
+        android:layout_width="198dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:hint="@string/give_me_the_time"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/distanceIO"
+        android:layout_width="198dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="156dp"
+        android:ems="10"
+        android:hint="@string/give_me_the_miles"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/timeIO"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/getTimeButton"
+        android:layout_width="173dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="@string/here_s_the_time"
+        app:layout_constraintBaseline_toBaselineOf="@+id/distanceIO"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/deviceOptions"
+        android:layout_width="239dp"
+        android:layout_height="28dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/distanceIO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/chooseDeviceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="112dp"
+        android:text="@string/choose_device"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/deviceOptions"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/topZapImage"
+        android:layout_width="398dp"
+        android:layout_height="82dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/deviceOptions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/eleczap" />
+
+    <ImageView
+        android:id="@+id/OTSImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/t5" />
+
+    <ImageView
+        android:id="@+id/OWImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/OTSImage"
+        app:layout_constraintStart_toStartOf="@+id/OTSImage"
+        app:srcCompat="@drawable/t4" />
+
+    <ImageView
+        android:id="@+id/ESImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/OWImage"
+        app:layout_constraintStart_toStartOf="@+id/OWImage"
+        app:srcCompat="@drawable/t3" />
+
+    <ImageView
+        android:id="@+id/BMSBImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/ESImage"
+        app:layout_constraintStart_toStartOf="@+id/ESImage"
+        app:srcCompat="@drawable/t2" />
+
+    <ImageView
+        android:id="@+id/HHImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/t10" />
+
+    <ImageView
+        android:id="@+id/GBImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/HHImage"
+        app:layout_constraintStart_toStartOf="@+id/HHImage"
+        app:srcCompat="@drawable/t9" />
+
+    <ImageView
+        android:id="@+id/RSImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/GBImage"
+        app:layout_constraintStart_toStartOf="@+id/GBImage"
+        app:srcCompat="@drawable/t8" />
+
+    <ImageView
+        android:id="@+id/i2Image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/RSImage"
+        app:layout_constraintStart_toStartOf="@+id/RSImage"
+        app:srcCompat="@drawable/t7" />
+
+    <ImageView
+        android:id="@+id/S1Image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/i2Image"
+        app:layout_constraintStart_toStartOf="@+id/i2Image"
+        app:srcCompat="@drawable/t6" />
+
+    <ImageView
+        android:id="@+id/walkImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/BMSBImage"
+        app:layout_constraintStart_toStartOf="@+id/BMSBImage"
+        app:srcCompat="@drawable/t1" />
+
+    <Button
+        android:id="@+id/getMilesButton"
+        android:layout_width="173dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="HERE'S THE MILES"
+        app:layout_constraintBaseline_toBaselineOf="@+id/timeIO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/getTimeButton" />
+
+    <TextView
+        android:id="@+id/HHLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Hovertrax Hoverboard"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/GBImage" />
+
+    <TextView
+        android:id="@+id/GBLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="GeoBlade 500"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/HHLabel"
+        app:layout_constraintStart_toStartOf="@+id/HHLabel" />
+
+    <TextView
+        android:id="@+id/RSLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="Razor Scooter"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/GBLabel"
+        app:layout_constraintStart_toStartOf="@+id/GBLabel" />
+
+    <TextView
+        android:id="@+id/i2Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="Segway i2 SE"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/RSLabel"
+        app:layout_constraintStart_toStartOf="@+id/RSLabel" />
+
+    <TextView
+        android:id="@+id/S1Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="Segway Ninebot S1"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/i2Label"
+        app:layout_constraintStart_toStartOf="@+id/i2Label"
+        app:layout_constraintTop_toBottomOf="@+id/S1Image" />
+
+    <TextView
+        android:id="@+id/MTSLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:text="MotoTech Skateboard"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/OWLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:layout_marginTop="64dp"
+        android:text="OneWheel"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/MTSLabel"
+        app:layout_constraintStart_toStartOf="@+id/MTSLabel"
+        app:layout_constraintTop_toBottomOf="@+id/ESLabel" />
+
+    <TextView
+        android:id="@+id/ESLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Evolve Skateboard"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/OWLabel"
+        app:layout_constraintTop_toBottomOf="@+id/BMSBLabel" />
+
+    <TextView
+        android:id="@+id/BMSBLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Boosted Mini S Board"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ESLabel"
+        app:layout_constraintTop_toBottomOf="@+id/walkLabel" />
+
+    <TextView
+        android:id="@+id/walkLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Walk"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/BMSBLabel"
+        app:layout_constraintTop_toBottomOf="@+id/walkImage" />
+
+    <TextView
+        android:id="@+id/MTSResultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/OTSImage"
+        app:layout_constraintTop_toTopOf="@+id/OTSImage" />
+
+    <TextView
+        android:id="@+id/OWResultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/OWImage"
+        app:layout_constraintTop_toTopOf="@+id/OWImage" />
+
+    <TextView
+        android:id="@+id/ESResultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/ESImage"
+        app:layout_constraintTop_toTopOf="@+id/ESImage" />
+
+    <TextView
+        android:id="@+id/BMSBResultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/BMSBImage"
+        app:layout_constraintTop_toTopOf="@+id/BMSBImage" />
+
+    <TextView
+        android:id="@+id/HHResultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/HHImage"
+        app:layout_constraintTop_toTopOf="@+id/HHImage" />
+
+    <TextView
+        android:id="@+id/GBResultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/GBImage"
+        app:layout_constraintTop_toTopOf="@+id/GBImage" />
+
+    <TextView
+        android:id="@+id/RSResultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/RSImage"
+        app:layout_constraintTop_toTopOf="@+id/RSImage" />
+
+    <TextView
+        android:id="@+id/i2ResultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/i2Image"
+        app:layout_constraintTop_toTopOf="@+id/i2Image" />
+
+    <TextView
+        android:id="@+id/S1ResultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/S1Image"
+        app:layout_constraintTop_toTopOf="@+id/S1Image" />
+
+    <TextView
+        android:id="@+id/walkResultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/walkImage"
+        app:layout_constraintTop_toTopOf="@+id/walkImage" />
+
+</android.support.constraint.ConstraintLayout>
